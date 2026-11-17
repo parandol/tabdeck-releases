@@ -106,7 +106,8 @@ A version of the Android app that is installed directly instead of from Google P
 Google Play app it can **control the Android device itself** from another device (touch, back/home,
 switching apps — through Android's accessibility service), and it updates itself from this page.
 
-- File: `TabDeck-<ver>-android.apk` on **[Releases → Latest](https://github.com/parandol/tabdeck-releases/releases/latest)** — *in preparation, not uploaded yet.*
+- Download: **[TabDeck-android.apk (latest)](https://github.com/parandol/tabdeck-releases/releases/latest)** — `TabDeck-<ver>-android.apk` under *Assets*. Android 9 or later.
+- Updates: **Settings → About → Check for updates and install** in the app downloads the newest APK from this page.
 - When installing, allow your browser or file manager to **install unknown apps**.
 - After installing, turn on TabDeck under **Settings → Accessibility** to let other devices control this one.
 - It cannot be installed next to the Google Play version for now; remove one before installing the other.
@@ -247,7 +248,8 @@ TabDeck을 설치한 다른 안드로이드 휴대폰·태블릿이 이 기기�
 Google Play 대신 직접 설치하는 안드로이드 앱입니다. Google Play 앱의 기능에 더해 **다른 기기에서 이 안드로이드
 자체를 제어**(터치, 뒤로·홈, 앱 전환 — 안드로이드 접근성 서비스 사용)할 수 있고, 이 페이지에서 스스로 업데이트합니다.
 
-- 파일: **[Releases → Latest](https://github.com/parandol/tabdeck-releases/releases/latest)** 의 `TabDeck-<버전>-android.apk` — *준비 중이며 아직 올라가지 않았습니다.*
+- 다운로드: **[Releases → Latest](https://github.com/parandol/tabdeck-releases/releases/latest)** 의 *Assets*에서 `TabDeck-<버전>-android.apk`를 받습니다. 안드로이드 9 이상.
+- 업데이트: 앱의 **설정 → 정보 → 업데이트 확인 및 설치**를 누르면 이 페이지에서 최신 APK를 받아 설치합니다.
 - 설치할 때 브라우저나 파일 관리자의 **출처를 알 수 없는 앱 설치**를 허용하십시오.
 - 설치한 뒤 **설정 → 접근성**에서 TabDeck을 켜야 다른 기기에서 이 기기를 제어할 수 있습니다.
 - 지금은 Google Play 버전과 함께 설치할 수 없습니다. 하나를 지운 뒤 설치하십시오.
