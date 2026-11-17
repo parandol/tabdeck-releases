@@ -273,4 +273,4 @@ Google Play 대신 직접 설치하는 안드로이드 앱입니다. Google Play
 - **윈도우:** SmartScreen이 나오면 **추가 정보 → 실행**을 누르십시오.
 - **리눅스(GNOME):** 트레이 아이콘을 보려면 AppIndicator 확장이 필요할 수 있습니다.
 
-개인정보보호정책: <https://ejsoft.kr/privacy.html>
+개인정보처리방침: <https://ejsoft.kr/privacy.html>
