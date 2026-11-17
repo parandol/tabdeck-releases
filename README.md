@@ -37,6 +37,27 @@ Get the newest version from **[Releases → Latest](https://github.com/parandol/
 | **Linux** Fedora / RHEL / openSUSE | `TabDeck-<ver>-linux-x86_64.rpm` | `sudo dnf install ./TabDeck-*.rpm` |
 | **Linux** any distro | `TabDeck-<ver>-linux-x86_64.AppImage` | `chmod +x` and run. A `.tar.gz` is also available. |
 
+## Tablet & phone apps
+
+The button panel runs on the tablet or phone you control from.
+
+| | Where | Status |
+|---|---|---|
+| **Android** | Google Play | Coming soon |
+| **iPad / iPhone** | App Store | Coming soon |
+| **Any browser** | Open the address (or scan the QR code) shown in the desktop app | Available now |
+
+## Android direct install
+
+A version of the Android app that is installed directly instead of from Google Play. On top of the
+Google Play app it can **control the Android device itself** from another device (touch, back/home,
+switching apps — through Android's accessibility service), and it updates itself from this page.
+
+- File: `TabDeck-<ver>-android.apk` on **[Releases → Latest](https://github.com/parandol/tabdeck-releases/releases/latest)** — *in preparation, not uploaded yet.*
+- When installing, allow your browser or file manager to **install unknown apps**.
+- After installing, turn on TabDeck under **Settings → Accessibility** to let other devices control this one.
+- It cannot be installed next to the Google Play version for now; remove one before installing the other.
+
 ## Features
 
 - **One tap, any action** — keyboard shortcuts, launching apps and websites, media and volume keys, text snippets, and macros that chain several steps.
@@ -108,6 +129,26 @@ The tablet and the computer must be on the same Wi-Fi / network.
 | 리눅스 데비안·우분투 | `TabDeck-<버전>-linux-amd64.deb` |
 | 리눅스 페도라·RHEL·openSUSE | `TabDeck-<버전>-linux-x86_64.rpm` |
 | 리눅스 공통 | `TabDeck-<버전>-linux-x86_64.AppImage`, `-linux-x64.tar.gz` |
+
+### 태블릿·휴대폰 앱
+
+버튼 패널은 조작하는 쪽 태블릿이나 휴대폰에서 실행합니다.
+
+| | 받는 곳 | 상태 |
+|---|---|---|
+| **안드로이드** | Google Play | 준비 중 |
+| **아이패드·아이폰** | App Store | 준비 중 |
+| **모든 브라우저** | 데스크톱 앱에 나온 주소를 열거나 QR 코드를 찍기 | 지금 사용 가능 |
+
+### 안드로이드 직접 설치
+
+Google Play 대신 직접 설치하는 안드로이드 앱입니다. Google Play 앱의 기능에 더해 **다른 기기에서 이 안드로이드
+자체를 제어**(터치, 뒤로·홈, 앱 전환 — 안드로이드 접근성 서비스 사용)할 수 있고, 이 페이지에서 스스로 업데이트합니다.
+
+- 파일: **[Releases → Latest](https://github.com/parandol/tabdeck-releases/releases/latest)** 의 `TabDeck-<버전>-android.apk` — *준비 중이며 아직 올라가지 않았습니다.*
+- 설치할 때 브라우저나 파일 관리자의 **출처를 알 수 없는 앱 설치**를 허용하십시오.
+- 설치한 뒤 **설정 → 접근성**에서 TabDeck을 켜야 다른 기기에서 이 기기를 제어할 수 있습니다.
+- 지금은 Google Play 버전과 함께 설치할 수 없습니다. 하나를 지운 뒤 설치하십시오.
 
 ### 주요 기능
 
