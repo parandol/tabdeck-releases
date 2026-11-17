@@ -102,7 +102,7 @@ To control the Android device fully — touch, back/home, switching apps — use
 
 ## Android direct install
 
-**TabDeck Direct** (`kr.ejsoft.tabdeck.direct`) is the Android app installed directly instead of from Google Play.
+**TabDeck (Direct)** (`kr.ejsoft.tabdeck.direct`) is the Android app installed directly instead of from Google Play.
 On top of the Google Play app it can **control the Android device itself** from another device (touch, back/home,
 switching apps — through Android's accessibility service), and it updates itself from this page.
 
@@ -121,7 +121,7 @@ switching apps — through Android's accessibility service), and it updates itse
    adb install TabDeck-<ver>-android.apk
    ```
    `Success` means it is installed. Turn USB debugging off again if you like.
-5. Open **TabDeck Direct**, accept the security notice, and turn on TabDeck under **Settings → Accessibility** to let other devices control this one.
+5. Open **TabDeck (Direct)**, accept the security notice, and turn on TabDeck under **Settings → Accessibility** to let other devices control this one.
 
 **Updates:** the app checks this page once a day (and from **Settings → About → Check for updates and install**),
 downloads the new APK and asks you to install it. The first time, Android asks you to allow installs from TabDeck.
@@ -260,7 +260,7 @@ TabDeck을 설치한 다른 안드로이드 휴대폰·태블릿이 이 기기�
 
 ### 안드로이드 직접 설치
 
-**TabDeck Direct**(`kr.ejsoft.tabdeck.direct`)는 Google Play 대신 직접 설치하는 안드로이드 앱입니다. Google Play 앱의 기능에 더해
+**TabDeck (Direct)**(`kr.ejsoft.tabdeck.direct`)는 Google Play 대신 직접 설치하는 안드로이드 앱입니다. Google Play 앱의 기능에 더해
 **다른 기기에서 이 안드로이드 자체를 제어**(터치, 뒤로·홈, 앱 전환 — 안드로이드 접근성 서비스 사용)할 수 있고, 이 페이지에서 스스로 업데이트합니다.
 
 > **고급 설치.** 접근성 권한을 쓰는 앱을 브라우저나 파일 관리자로 설치하면 Google Play 프로텍트가 "기기 보호를 위해 앱 차단됨"으로 막고,
@@ -276,7 +276,7 @@ TabDeck을 설치한 다른 안드로이드 휴대폰·태블릿이 이 기기�
    adb install TabDeck-<버전>-android.apk
    ```
    `Success`가 나오면 설치된 것입니다. 원하면 USB 디버깅을 다시 끄십시오.
-5. **TabDeck Direct**를 열어 보안 안내에 동의하고, 다른 기기에서 제어하려면 **설정 → 접근성**에서 TabDeck을 켭니다.
+5. **TabDeck (Direct)**를 열어 보안 안내에 동의하고, 다른 기기에서 제어하려면 **설정 → 접근성**에서 TabDeck을 켭니다.
 
 **업데이트:** 앱이 하루에 한 번(그리고 **설정 → 정보 → 업데이트 확인 및 설치**에서) 이 페이지를 확인해, 새 APK를 내려받고 설치를 묻습니다.
 처음 한 번은 안드로이드가 TabDeck의 앱 설치 허용을 요청합니다. Google Play 버전과는 별도의 앱이라 함께 설치할 수 있습니다.
