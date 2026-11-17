@@ -102,16 +102,30 @@ To control the Android device fully — touch, back/home, switching apps — use
 
 ## Android direct install
 
-A version of the Android app that is installed directly instead of from Google Play. On top of the
-Google Play app it can **control the Android device itself** from another device (touch, back/home,
+**TabDeck Direct** (`kr.ejsoft.tabdeck.direct`) is the Android app installed directly instead of from Google Play.
+On top of the Google Play app it can **control the Android device itself** from another device (touch, back/home,
 switching apps — through Android's accessibility service), and it updates itself from this page.
 
-- Download: **[TabDeck-android.apk (latest)](https://github.com/parandol/tabdeck-releases/releases/latest)** — `TabDeck-<ver>-android.apk` under *Assets*. Android 9 or later.
-- Updates: **Settings → About → Check for updates and install** in the app downloads the newest APK from this page.
-- When installing, allow your browser or file manager to **install unknown apps**.
-- After installing, turn on TabDeck under **Settings → Accessibility** to let other devices control this one.
-- It is a separate app (**TabDeck Direct**, `kr.ejsoft.tabdeck.direct`), so it can be installed next to the Google Play version.
-- If Google Play Protect blocks the install, choose *More details → Install anyway*. The app is not on Google Play, and it uses the accessibility permission only to let your own devices control it.
+> **Advanced install.** Google Play Protect blocks apps that use the accessibility permission when they are installed
+> from a browser or a file manager ("App blocked to protect your device", with no *Install anyway*). Install it once
+> from a computer over USB (adb) as below. After that, the app updates itself.
+
+1. **On the Android device:** Settings → About → tap **Build number** 7 times to turn on Developer options,
+   then Settings → Developer options → turn on **USB debugging**.
+2. **On the computer:** install [Android SDK Platform-Tools](https://developer.android.com/tools/releases/platform-tools)
+   (it contains `adb`) and download `TabDeck-<ver>-android.apk` from **[Releases → Latest](https://github.com/parandol/tabdeck-releases/releases/latest)**.
+3. Connect the device with a USB cable and allow **USB debugging** on the device when asked.
+4. In a terminal, in the folder with the APK:
+   ```
+   adb devices
+   adb install TabDeck-<ver>-android.apk
+   ```
+   `Success` means it is installed. Turn USB debugging off again if you like.
+5. Open **TabDeck Direct**, accept the security notice, and turn on TabDeck under **Settings → Accessibility** to let other devices control this one.
+
+**Updates:** the app checks this page once a day (and from **Settings → About → Check for updates and install**),
+downloads the new APK and asks you to install it. The first time, Android asks you to allow installs from TabDeck.
+It is a separate app from the Google Play version, so both can be installed.
 
 ## Features
 
@@ -246,15 +260,26 @@ TabDeck을 설치한 다른 안드로이드 휴대폰·태블릿이 이 기기�
 
 ### 안드로이드 직접 설치
 
-Google Play 대신 직접 설치하는 안드로이드 앱입니다. Google Play 앱의 기능에 더해 **다른 기기에서 이 안드로이드
-자체를 제어**(터치, 뒤로·홈, 앱 전환 — 안드로이드 접근성 서비스 사용)할 수 있고, 이 페이지에서 스스로 업데이트합니다.
+**TabDeck Direct**(`kr.ejsoft.tabdeck.direct`)는 Google Play 대신 직접 설치하는 안드로이드 앱입니다. Google Play 앱의 기능에 더해
+**다른 기기에서 이 안드로이드 자체를 제어**(터치, 뒤로·홈, 앱 전환 — 안드로이드 접근성 서비스 사용)할 수 있고, 이 페이지에서 스스로 업데이트합니다.
 
-- 다운로드: **[Releases → Latest](https://github.com/parandol/tabdeck-releases/releases/latest)** 의 *Assets*에서 `TabDeck-<버전>-android.apk`를 받습니다. 안드로이드 9 이상.
-- 업데이트: 앱의 **설정 → 정보 → 업데이트 확인 및 설치**를 누르면 이 페이지에서 최신 APK를 받아 설치합니다.
-- 설치할 때 브라우저나 파일 관리자의 **출처를 알 수 없는 앱 설치**를 허용하십시오.
-- 설치한 뒤 **설정 → 접근성**에서 TabDeck을 켜야 다른 기기에서 이 기기를 제어할 수 있습니다.
-- 별도의 앱(**TabDeck Direct**, `kr.ejsoft.tabdeck.direct`)이라 Google Play 버전과 함께 설치할 수 있습니다.
-- Google Play 프로텍트가 설치를 막으면 *자세히 → 무시하고 설치*를 누르십시오. Google Play에 없는 앱이며, 접근성 권한은 내 다른 기기에서 이 기기를 제어하는 데만 씁니다.
+> **고급 설치.** 접근성 권한을 쓰는 앱을 브라우저나 파일 관리자로 설치하면 Google Play 프로텍트가 "기기 보호를 위해 앱 차단됨"으로 막고,
+> *무시하고 설치* 버튼도 나오지 않습니다. 아래처럼 컴퓨터에서 USB(adb)로 **한 번만** 설치하십시오. 그다음부터는 앱이 스스로 업데이트합니다.
+
+1. **안드로이드 기기:** 설정 → 휴대전화(태블릿) 정보 → **빌드 번호**를 7번 눌러 개발자 옵션을 켠 뒤, 설정 → 개발자 옵션 → **USB 디버깅**을 켭니다.
+2. **컴퓨터:** [Android SDK Platform-Tools](https://developer.android.com/tools/releases/platform-tools)(`adb` 포함)를 설치하고,
+   **[Releases → Latest](https://github.com/parandol/tabdeck-releases/releases/latest)** 에서 `TabDeck-<버전>-android.apk`를 받습니다.
+3. USB 케이블로 연결하고, 기기에 나오는 **USB 디버깅 허용**을 누릅니다.
+4. APK가 있는 폴더에서 터미널(명령 프롬프트)로 실행합니다.
+   ```
+   adb devices
+   adb install TabDeck-<버전>-android.apk
+   ```
+   `Success`가 나오면 설치된 것입니다. 원하면 USB 디버깅을 다시 끄십시오.
+5. **TabDeck Direct**를 열어 보안 안내에 동의하고, 다른 기기에서 제어하려면 **설정 → 접근성**에서 TabDeck을 켭니다.
+
+**업데이트:** 앱이 하루에 한 번(그리고 **설정 → 정보 → 업데이트 확인 및 설치**에서) 이 페이지를 확인해, 새 APK를 내려받고 설치를 묻습니다.
+처음 한 번은 안드로이드가 TabDeck의 앱 설치 허용을 요청합니다. Google Play 버전과는 별도의 앱이라 함께 설치할 수 있습니다.
 
 ### 주요 기능
 
