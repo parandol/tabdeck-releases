@@ -110,7 +110,8 @@ switching apps — through Android's accessibility service), and it updates itse
 - Updates: **Settings → About → Check for updates and install** in the app downloads the newest APK from this page.
 - When installing, allow your browser or file manager to **install unknown apps**.
 - After installing, turn on TabDeck under **Settings → Accessibility** to let other devices control this one.
-- It cannot be installed next to the Google Play version for now; remove one before installing the other.
+- It is a separate app (**TabDeck Direct**, `kr.ejsoft.tabdeck.direct`), so it can be installed next to the Google Play version.
+- If Google Play Protect blocks the install, choose *More details → Install anyway*. The app is not on Google Play, and it uses the accessibility permission only to let your own devices control it.
 
 ## Features
 
@@ -252,7 +253,8 @@ Google Play 대신 직접 설치하는 안드로이드 앱입니다. Google Play
 - 업데이트: 앱의 **설정 → 정보 → 업데이트 확인 및 설치**를 누르면 이 페이지에서 최신 APK를 받아 설치합니다.
 - 설치할 때 브라우저나 파일 관리자의 **출처를 알 수 없는 앱 설치**를 허용하십시오.
 - 설치한 뒤 **설정 → 접근성**에서 TabDeck을 켜야 다른 기기에서 이 기기를 제어할 수 있습니다.
-- 지금은 Google Play 버전과 함께 설치할 수 없습니다. 하나를 지운 뒤 설치하십시오.
+- 별도의 앱(**TabDeck Direct**, `kr.ejsoft.tabdeck.direct`)이라 Google Play 버전과 함께 설치할 수 있습니다.
+- Google Play 프로텍트가 설치를 막으면 *자세히 → 무시하고 설치*를 누르십시오. Google Play에 없는 앱이며, 접근성 권한은 내 다른 기기에서 이 기기를 제어하는 데만 씁니다.
 
 ### 주요 기능
 
